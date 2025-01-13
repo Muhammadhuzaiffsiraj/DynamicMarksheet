@@ -1,11 +1,12 @@
 const Marksheetdiv = document.querySelector('#Marksheet')
-const studentname = prompt("What is your Name")
+const studentname = prompt("What is your Good Name")
 const fname = prompt("What is your Father Name")
 const obt = parseFloat(prompt("What is your obtain marks"))
 const total = parseFloat(prompt("What is you total marks"))
 const per = (obt/total)*100 
-
-
+Marksheet.style.border = '5px solid green'
+Marksheet.style.width = '80%'
+Marksheet.style.height = '250px'
 let Grade ,Remarks ;
 
 if(per <=100 && per >= 80){
@@ -34,11 +35,9 @@ else{
     Remarks = "Fail. Better Luck Next Time!"
 }
 
-
-document.write(per)
-Marksheet.innerHTML =   `<p>Name::${studentname}</p>  
-                         <p>Father Name:${fname}</p>
-                         <p>Obtain Marks:${obt}</p>
-                        <p>Total Marks:${total} 
-                        <p>Grade:${Grade}</p> 
-                        <p>${Remarks}</p>`
+Marksheet.innerHTML =   `<p>Name::${studentname}</p>`+
+                         `<p>Father Name:${fname}</p>`+
+                        ` <p>Obtain Marks:${obt}</p>`+
+                        `<p>Total Marks:${total}</p>` +                                       `<p>Percentage: ${per}% </p>`+
+                        `<p>Grade:${Grade}</p> `+
+                        `<p>Remarks:${Remarks}</p>`
