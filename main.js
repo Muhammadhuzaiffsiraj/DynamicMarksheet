@@ -1,5 +1,5 @@
 const Marksheetdiv = document.querySelector('#Marksheet')
-const studentname = prompt("What is your Good Name")
+const studentname = prompt("What is your Name")
 const fname = prompt("What is your Father Name")
 const obt = parseFloat(prompt("What is your obtain marks"))
 const total = parseFloat(prompt("What is you total marks"))
